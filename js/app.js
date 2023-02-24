@@ -65,6 +65,12 @@ const eliminarCurso = (e) => {
     }
 }
 
+const vaciarCarrito = () => {
+    while(contenedorCarrito.firstChild){
+        contenedorCarrito.removeChild(contenedorCarrito.firstChild);
+    }
+}
+
 
 listaCursos.addEventListener('click', agregarCurso);
 carrito.addEventListener('click', eliminarCurso);
